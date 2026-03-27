@@ -43,27 +43,64 @@ First number != 0
 
 
 
+# def main():
+#     plate = str(input("Plate: "))
+#     if is_valid(plate):
+#         print("Valid")
+#     else:
+#         print("Invalid")
+
+
+# def is_valid(s):
+
+#     if len(s) < 2 or len(s) > 6:
+#         return False
+#     if not s[0:2].isalpha():
+#         return False
+#     if not s.isalnum():
+#         return False
+#     for i in range(len(s)):
+#         if s[i].isdigit():
+#             if s[i] == '0' or not s[i:].isdigit():
+#                 return False
+#             break
+#     return True
+    
+# main()
+
+
+
+#######################################################################
+
 def main():
-    plate = str(input("Plate: "))
+    plate = input("Plate: ")
     if is_valid(plate):
         print("Valid")
+
     else:
         print("Invalid")
 
-
 def is_valid(s):
+    # c = str()
+    print("Hi This is Sonal")
+    while s[:2].isalpha() and len(s) <= 6 and s[:].isalnum():
+            for i, char in enumerate(s):
+                if char.isdigit():
+                    # Check if everything from this point to the end is digits
+                    return s[i:].isdigit()
+                    print("RADHA RADHA RADHA RADHA RADHA RADHA")
+            return False # No digits found at all
 
-    if len(s) < 2 or len(s) > 6:
-        return False
-    if not s[0:2].isalpha():
-        return False
-    if not s.isalnum():
-        return False
-    for i in range(len(s)):
-        if s[i].isdigit():
-            if s[i] == '0' or not s[i:].isdigit():
-                return False
-            break
-    return True
-    
 main()
+
+
+
+        # if s[2:].isdigit()  :
+        #     return s
+        # def digits_only_at_end(s):
+        #     # Find the index of the first digit
+
+
+
+
+#####################################################################################

@@ -1,0 +1,7 @@
+
+This method is standard for developers and works for folders of any size. 
+YouTube
+YouTube
+Create a New Repository on GitHub: Log in to GitHub and create a new repository. Do not initialize it with a README, license, or .gitignore yet to avoid merge conflicts.
+Open Terminal: Use Spotlight (Cmd + Space) to find and open Terminal.
+Navigate to Your Local Folder: Use the cd command followed by the path to your folder (you can drag the folder directly into the terminal window to auto-fill the path).
